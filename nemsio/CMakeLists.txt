@@ -58,10 +58,10 @@ install(FILES
 	${PROJECT_BINARY_DIR}/nemsio_openclose.mod
 	${PROJECT_BINARY_DIR}/nemsio_read.mod
 	${PROJECT_BINARY_DIR}/nemsio_write.mod
-	DESTINATION "include")
+	DESTINATION "include/nemsio")
 
 if (MPI_Fortran_FOUND)
 	install(FILES
 		${PROJECT_BINARY_DIR}/nemsio_module_mpi.mod
-		DESTINATION "include")
+		DESTINATION "include/nemsio")
 endif(MPI_Fortran_FOUND)
