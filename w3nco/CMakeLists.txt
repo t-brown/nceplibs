@@ -59,6 +59,11 @@ set(SOURCES
     getgbexm.f  putgben.f     w3difdat.f  w3fp13.f
 )
 
+set_source_files_properties(aea.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(q9ie32.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(w3ai00.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(w3ai39.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+
 #------------------------------------------------------------------------------
 # Create a libraray
 add_library(w3nco ${SOURCES})

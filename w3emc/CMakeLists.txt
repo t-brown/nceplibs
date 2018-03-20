@@ -72,6 +72,13 @@ set(SOURCES
     w3fb11.f            w3ft05v.f  xdopen.f
 )
 
+set_source_files_properties(mersenne_twister.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(w3fi32.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(w3fi85.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(w3fp05.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(w3fp06.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+set_source_files_properties(w3fp10.f PROPERTIES COMPILE_FLAGS -fno-range-check)
+
 #------------------------------------------------------------------------------
 # Create a libraray
 add_library(w3emc ${SOURCES})
