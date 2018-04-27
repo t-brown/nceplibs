@@ -59,6 +59,12 @@ C$$$i*/
 #ifdef IBM8
    long long int mova2i(unsigned char *a)
 #endif
+#ifdef FREEBSD
+   int mova2i_(unsigned char *a)
+#endif
+#ifdef DARWIN
+   int mova2i_(unsigned char *a)
+#endif
 
 {
     return (int)(*a);
