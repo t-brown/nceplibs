@@ -90,8 +90,8 @@ set(SOURCES
 # Use the pre-processor to generate the bufrlib parameter file
 add_custom_command(
 	OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/bufrlib.prm
-	COMMAND cpp -traditional -P ${CMAKE_CURRENT_SOURCE_DIR}/bufrlib.PRM ${CMAKE_CURRENT_BINARY_DIR}/bufrlib.prm
-	DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/bufrlib.PRM
+	COMMAND ${CMAKE_Fortran_COMPILER} -o ${CMAKE_CURRENT_BINARY_DIR}/bufrlib.prm -E ${CMAKE_CURRENT_SOURCE_DIR}/bufrlib.F
+	DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/bufrlib.F
 )
 list(APPEND SOURCES ${CMAKE_CURRENT_BINARY_DIR}/bufrlib.prm)
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
