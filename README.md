@@ -14,5 +14,6 @@ This includes:
 - SFCIO
 - Sigio
 - SP
+- W3
 - W3EMC ([Environmental Modeling Center](http://www.emc.ncep.noaa.gov/))
 - W3NCO ([NCEP Central Operations](http://www.nco.ncep.noaa.gov/))
